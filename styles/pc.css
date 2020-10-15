@@ -4,6 +4,7 @@ HTML Style Rules
 
 html {
     background-color: rgb(158, 65, 65);
+    box-sizing: border-box;
 }
 
 /* Select all elements */

@@ -3,13 +3,14 @@ HTML Style Rules
 **************************/
 
 html {
-    background-color: rgb(158, 65, 65);
+   
 }
 
 /* Select all elements */
 * {
     padding: 0px;
     margin: 0px;
+    box-sizing: border-box;
 }
 
 /**************************
@@ -26,6 +27,9 @@ Body Style Rules
 /**************************
 Header Style Rules
 **************************/
+h1, h5 {
+    font-family: 'Righteous', cursive;
+}
 
 
 
