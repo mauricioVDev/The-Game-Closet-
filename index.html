@@ -17,7 +17,8 @@
     </head>
 
     <body>
-
+        
+        <!-- Header  -->
         <header class="jumbotron jumbotron-fluid bg-warning">
             <div class="container">
                 <div class="row">
@@ -36,6 +37,7 @@
             </div>
         </header>
 
+        <!-- Navbar  -->
         <nav class="navbar navbar-expand-sm navbar-dark position-relative ">
             <div class="container ">
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#thegameclosetNavbar">
@@ -51,6 +53,7 @@
                 </div>
             </div>
         </nav>
+
         <!-- Carousel Indicators -->
         <div class="container">
             <div class="row row-content">
@@ -92,6 +95,7 @@
                                 </div>
                             </div>
                         </div>
+
                         <!-- Carousel Prev / Next Buttons -->
                         <a class="carousel-control-prev" href="#homeCarousel" role="button" data-slide="prev">
                             <span class="carousel-control-prev-icon"></span>
@@ -101,49 +105,54 @@
                             <span class="carousel-control-next-icon"></span>
                             <span class="sr-only">Next</span>
                         </a>
+
+                        <!-- Carousel Pause / Play Buttons  -->
+                        <div class="btn-group" id="carouselButton">
+                            <button class="btn btn-danger btn-sm" id="carouselPause">
+                                <i class="fa fa-pause"></i>
+                            </button>
+                            <button class="btn btn-danger btn-sm" id="carouselPlay">
+                                <i class="fa fa-play"></i>
+                            </button>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
 
         <main>
+
             <!-- Playstation Anchor to Playstation Games Page -->
             <div class="game-container mt-3">
                 <a class="nav-link" href="#"><img class="d-block rounded-circle" src="images/PlayStation-Header.jpg" alt="Snow" style="width:100%;"></a>
               </div>
             
             <!-- Xboox Anchor to Xbox Games Page -->
-            
             <div class="game-container mt-3">
                 <a class="nav-link" href="#"><img class="d-block rounded-circle" src="images/Xbox-One-console.jpg" alt="Snow" style="width:100%;"></a>
               </div>
 
             <!-- Switch Anchor to Switch Games Page -->
-
             <div class="game-container mt-3">
                 <a class="nav-link" href="#"><img class="d-block rounded-circle" src="images/nswitch.jpg" alt="Snow" style="width:100%;"></a>
               </div>
 
             <!-- PC Anchor to PC Games Page -->
-
             <div class="game-container mt-3">
                 <a class="nav-link" href="#"><img class="d-block rounded-circle" src="images/pc.jpg" alt="Snow" style="width:100%;"></a>
               </div>
 
             <!-- Sega-Genesis Anchor to Sega-Geneesis Games Page -->
-
             <div class="game-container mt-3">
                 <a class="nav-link" href="#"><img class="d-block rounded-circle" src="images/sega.jpg" alt="Snow" style="width:100%;"></a>
               </div>
 
             <!-- Nintendo-64 Anchor to Nintendo-64 Games Page -->
-
             <div class="game-container mt-3">
                 <a class="nav-link" href="#"><img class="d-block rounded-circle" src="images/n64.900x.jpg" alt="Snow" style="width:100%;"></a>
               </div>
 
             <!--Team Game Choice Accordian-->
-
            <div class="accordian" id="accordianMain">
                <div class="card">
                    <div class="card-header" id="headingOne">
@@ -151,23 +160,12 @@
                            <button class="btn btn-link" type="button" data-toggle="collapse" 
                            data-target="#collpaseOne" aaria-expanded="true" aria-controls="collapseOne">
                            What We're Playing Now!
-
                            </button>
-                        
                        </h2>
                    </div>
                </div>
            </div>
             
-
-            
-
-    
-
-
-
-
-
 
 
         </main>
@@ -179,10 +177,24 @@
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 
+    <!-- Tooltip script  -->
     <script>
         $(function () {
             $('[data-toggle="tooltip"]').tooltip()
         })
+    </script>
+
+    <!-- Carousel Pause / Play Script  -->
+    <script>
+        $(function() {
+            $(".carousel").carousel( {interval: 2000 });
+            $("#carouselPause").click(function(){
+                $(".carousel").carousel("pause");
+            });
+            $("#carouselPlay").click(function(){
+                $(".carousel").carousel("cycle");
+            });
+        });
     </script>
 
     </body>

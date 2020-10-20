@@ -62,7 +62,16 @@ ul li {
 
 }
 
+/**************************
+Carousel Style Rules
+**************************/
 
+#carouselButton {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: 100;
+}
 
 /**************************
 Main Style Rules
