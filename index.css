@@ -91,6 +91,17 @@ Main Style Rules
     transform: translate(-50%, -50%);
   }
 
+  /**************************
+Accordian Style Rules
+**************************/
+
+#accordian-title h3 {
+    color: white;
+    font-size: 3rem;
+    text-align: center;
+    background-color: black;
+}
+
 
 
 /**************************
