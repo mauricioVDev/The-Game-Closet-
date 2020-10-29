@@ -52,7 +52,7 @@ nav {
     color: white;
 }
 
-ul li {
+#navbar-list li {
     padding-left: 2rem;
     border: 2px solid black;
     text-align: center;
@@ -107,4 +107,12 @@ Accordian Style Rules
 /**************************
 Footer Style Rules
 **************************/
+
+
+
+#social-title {
+    color: white;
+    background-color: black;
+}
+
 
