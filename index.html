@@ -17,11 +17,16 @@
     </head>
 
     <body>
+
+        <!-- Promotion -->
+        <div class="bg-dark text-white text-center pt-2" id="promotion">
+            <p><strong>First Time Customers Get 15% Off On Us! </strong></p>
+        </div>
         
         <!-- Header  -->
         <header class="jumbotron jumbotron-fluid bg-warning">
             <div class="container">
-                <div class="row">
+                <div class="row" style="height: 18.75rem;">
                     <div class="col-12">
                         <div class="media">
                             <a class="mx-auto" href="index.html"><img class="d-flex mr-3 img-thumbnail img-fluid mx-auto" src="images/download.jpeg" alt="8 Bit Dungeon Door" /></a>
@@ -29,8 +34,8 @@
                     </div>
                     <div class="row mx-auto mt-3">
                         <div class="col-12">
-                            <h1>The Game Closet</h1>
-                            <h5 class="text-center mb-0">Where the old and new meet</h5>
+                            <h1 class="mb-0">The Game Closet</h1>
+                            <h5 class="text-center">Where the old and new meet</h5>
                         </div>
                     </div>
                 </div>
@@ -38,8 +43,8 @@
         </header>
 
         <!-- Navbar  -->
-        <nav class="navbar navbar-expand-sm navbar-dark position-relative ">
-            <div class="container ">
+        <nav class="navbar navbar-expand-sm navbar-dark bg-dark sticky-top">
+            <div class="container">
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#thegameclosetNavbar">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -57,7 +62,7 @@
         <!-- Carousel Indicators -->
         <div class="container">
             <div class="row row-content">
-                <div class="col-md-12 mx-auto px-0 mt-3">
+                <div class="col-12 col-sm-12 col-lg-12 mx-auto px-0">
                     <div id="homeCarousel" class="carousel slide" data-ride="carousel">
                         <ol class="carousel-indicators">
                             <li data-target="#homeCarousel" data-slide-to="0" class="active"></li>
@@ -68,30 +73,34 @@
                         <!-- Carousel Inner Items -->
                         <div class="carousel-inner">
                             <div class="carousel-item active">
-                                <img class="d-block w-100" src="images/video-game-controller-buttons.jpg" alt="PS4 Game Controller" />
+                                <img class="d-block w-100" src="images/theregisti-CKSM02SAfZM-unsplash.jpg" alt="PS4 Game Controller" />
                                 <div class="carousel-caption">
-                                    <h3>Welcome</h3>
-                                    <p>Take a peek inside and let us know what you're looking for!</p>
+                                    <h3 class="pb-5">
+                                        Welcome<br>
+                                        Peek Inside For Great Deals!
+                                    </h3>
                                 </div>
                             </div>
                             <div class="carousel-item">
                                 <img class="d-block w-100" src="images/wesley-tingey--l4UCK06uNM-unsplash.jpg" />
                                 <div class="carousel-caption">
-                                    <h3>Enjoy the classics</h3><br/>
-                                    <p></p>
+                                    <h3 class="pb-5">
+                                        Enjoy the classics
+                                    </h3>
                                 </div>
                             </div>
                             <div class="carousel-item">
                                 <img class="d-block w-100" src="images/kamil-s-6LeTnsPD1wc-unsplash.jpg" />
                                 <div class="carousel-caption">
-                                    <h3></h3><br/>
-                                    <p></p>
+                                    <h3 class="pb-5">Need New Controllers and Accessories?</h3>
                                 </div>
                             </div>
                             <div class="carousel-item">
                                 <img class="d-block w-100" src="images/louie-castro-garcia-UitmwXNMHiE-unsplash.jpg" />
                                 <div class="carousel-caption">
-                                    <h3>Call to schedule your next game session</h3>
+                                    <h3 class="pb-5">
+                                        Call To Schedule Your Next Game Session
+                                    </h3>
                                 </div>
                             </div>
                         </div>
@@ -121,41 +130,48 @@
         </div>
 
         <main>
-
             <!-- Playstation Anchor to Playstation Games Page -->
-            <div class="game-container mt-3">
-                <a class="nav-link" href="#"><img class="d-block rounded-circle" src="images/PlayStation-Header.jpg" alt="Snow" style="width:100%;"></a>
-              </div>
-            
-            <!-- Xboox Anchor to Xbox Games Page -->
-            <div class="game-container mt-3">
-                <a class="nav-link" href="#"><img class="d-block rounded-circle" src="images/Xbox-One-console.jpg" alt="Snow" style="width:100%;"></a>
-              </div>
+            <div>
+                <div class="game-container mt-3">
+                    <a class="nav-link" href="#"><img class="d-block img-fluid h-100" src="images/PlayStation-Header.jpg" alt="Playstation Logo" style="width:100%;"></a>
+                    <a href="#"><span id="hover-el"class="centered">Playstation</span></a>
+                    </div>
+                
+                <!-- Xboox Anchor to Xbox Games Page -->
+                <div class="game-container mt-3">
+                    <a class="nav-link" href="#"><img class="d-block img-fluid h-100" src="images/Xbox-One-console.jpg" alt="XBOX Console" style="width:100%;"></a>
+                    <a href="#"><span id="hover-el"class="centered">XBOX</span></a>
+                    </div>
 
-            <!-- Switch Anchor to Switch Games Page -->
-            <div class="game-container mt-3">
-                <a class="nav-link" href="#"><img class="d-block rounded-circle" src="images/nswitch.jpg" alt="Snow" style="width:100%;"></a>
-              </div>
+                <!-- Switch Anchor to Switch Games Page -->
+                <div class="game-container mt-3">
+                    <a class="nav-link" href="#"><img class="d-block img-fluid h-100" src="images/nswitch2.jpg" alt="Switch Console" style="width:100%;"></a>
+                    <a href="#"><span id="hover-el"class="centered">Switch</span></a>
+                    </div>
 
-            <!-- PC Anchor to PC Games Page -->
-            <div class="game-container mt-3">
-                <a class="nav-link" href="#"><img class="d-block rounded-circle" src="images/pc.jpg" alt="Snow" style="width:100%;"></a>
-              </div>
+                <!-- PC Anchor to PC Games Page -->
+                <div class="game-container mt-3">
+                    <a class="nav-link" href="#"><img class="d-block img-fluid mh-100" src="images/pc.jpg" alt="PC Computer" style="width:100%;"></a>
+                    <a href="#"><span id="hover-el"class="centered">PC Gaming</span></a>
+                    </div>
 
-            <!-- Sega-Genesis Anchor to Sega-Geneesis Games Page -->
-            <div class="game-container mt-3">
-                <a class="nav-link" href="#"><img class="d-block rounded-circle" src="images/sega.jpg" alt="Snow" style="width:100%;"></a>
-              </div>
+                <!-- Sega-Genesis Anchor to Sega-Geneesis Games Page -->
+                <div class="game-container mt-3">
+                    <a class="nav-link" href="#"><img class="d-block img-fluid h-100" src="images/sega.jpg" alt="Sega-Genesis Logo" style="width:100%;"></a>
+                    <a href="#"><span id="hover-el"class="centered">Sega-Genesis</span></a>
+                    </div>
 
-            <!-- Nintendo-64 Anchor to Nintendo-64 Games Page -->
-            <div class="game-container mt-3">
-                <a class="nav-link" href="#"><img class="d-block rounded-circle" src="images/n64.900x.jpg" alt="Snow" style="width:100%;"></a>
-              </div>
+                <!-- Nintendo-64 Anchor to Nintendo-64 Games Page -->
+                <div class="game-container mt-3">
+                    <a class="nav-link" href="#"><img class="d-block img-fluid h-100" src="images/n64.900x.jpg" alt="Nintendo 64 Console" style="width:100%;"></a>
+                    <a href="#"><span id="hover-el"class="centered">N64</span></a>
+                    </div>
+            </div>
 
             <!--Team Game Choice Accordian-->
             <div class="row row-content mt-3" id="accordian-title">
                 <div class="col-sm-12">
-                    <h3 class="mb-0 pb-1 align-middle">Our Teams Game Picks</h3>
+                    <h3 class="mb-0 pt-3">Our Teams Game Picks</h3>
 
                     <div id="accordianMain">
                         <div class="card">
@@ -167,7 +183,7 @@
                                 </h2>
                                 <div class="collapse show" id="brandon" data-parent="#accordianMain">
                                     <div class="card-body">
-                                        <img class="d-block w-100" src="images/Ghost-Of-Tsushima.jpg" /></br>
+                                        <img class="d-block w-100 h-100 img-fluid" src="images/Ghost-Of-Tsushima.jpg" /></br>
                                         <h5>
                                             Ghost of Tsushima (PS5)
                                         </h5>
@@ -230,76 +246,80 @@
             </div>
 
             <!-- Social Media Accounts -->   
-            
-            <h3 class="text-center align-middle mb-0" id="social-title">Connect With Us</h3>
-            <div class="container bg-danger">
+                
+            <h3 class="text-center mb-0 p-2" id="social-title">Connect With Us</h3>
+            <div class="container-fluid">
                 <div class="row">
-                    <div class="col-12 text-center">
-                        <a class="btn btn-social-icon btn-instagram" href="http://instagram.com/"><i class="fa fa-instagram fa-lg"></i></a>
-                        <a class="btn btn-social-icon btn-facebook" href="http://facebook.com/"><i class="fa fa-facebook fa-lg"></i></i></a>
-                        <a class="btn btn-social-icon btn-twitter" href="http://twitter.com/"><i class="fa fa-twitter fa-lg"></i></a>
-                        <a class="btn btn-social-icon btn-youtube" href="http://youtube.com/"><i class="fa fa-youtube fa-lg"></i></a>
+                    <div class="col-12 text-center my-1">
+                        <a class="btn btn-social-icon btn-instagram offset-1" href="http://instagram.com/" id="instagram"><i class="fa fa-instagram fa-3x"></i></a>
+                        <a class="btn btn-social-icon btn-facebook" href="http://facebook.com/" id="facebook"><i class="fa fa-facebook fa-3x"></i></a>
+                        <a class="btn btn-social-icon btn-twitter" href="http://twitter.com/" id="twitter"><i class="fa fa-twitter fa-3x"></i></a>
+                        <a class="btn btn-social-icon btn-youtube" href="http://youtube.com/" id="youtube"><i class="fa fa-youtube fa-3x"></i></a>
                     </div>
                 </div>
             </div>
         </main>
 
+        <!-- Footer -->
         <footer class="site-footer bg-warning">
             <div class="container">
-                <div class="row offset-1">
-                    <div class="col-6 mt-3">
-                        <h5>Links</h5>
-                        <ul class="list-unstyled" id="footer-nav">
+                <div class="row text-center">
+                    <div class="col-3 mt-3 order-last mt-0">
+                        <h5 class="mb-2">Links</h5>
+                        <ul class="list-unstyled">
                             <li><a href="#">Home</a></li>
                             <li><a href="#">Video Games</a></li>
                             <li><a href="#">About Us</a></li>
                             <li><a href="#">Contact</a></li>
                         </ul>
                     </div>
-                    <div class="col-6 mt-3">
+                    <div class="col-4 mt-3" style="border-right: 1px solid black;">
                         <address>
-                            <h5>
-                                Store Location
+                            <h5 class="mb-2">
+                                Location
                             </h5>
                             1212 Classic St Nw</br>
                             Washington DC, 20010</br>
-                            <h5>
+                        </address>
+                    </div>
+                    <div class="col-5 mt-3" style="border-right: 1px solid black">
+                        <address>
+                            <h5 class="mb-2">
                                 Store Hours
                             </h5>
                             M-F 10AM-6PM</br>
-                            Saturday 10AM-6PM
-                        </address>
-
+                            Saturday 12PM-6PM </br>
+                            Sunday Closed
+                        </address>          
                     </div>
                 </div>
             </div>
-
         </footer>
 
         <!-- jQuery must come first, then Popper.js, then the Bootstrap JavaScript plugins.-->
-    <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
-    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
-    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+        <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+        <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+        <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 
-    <!-- Tooltip script  -->
-    <script>
-        $(function () {
-            $('[data-toggle="tooltip"]').tooltip()
-        })
-    </script>
+        <!-- Tooltip script  -->
+        <script>
+            $(function () {
+                $('[data-toggle="tooltip"]').tooltip()
+            })
+        </script>
 
-    <!-- Carousel Pause / Play Script  -->
-    <script>
-        $(function() {
-            $(".carousel").carousel( {interval: 2000 });
-            $("#carouselPause").click(function(){
-                $(".carousel").carousel("pause");
+        <!-- Carousel Pause / Play Script  -->
+        <script>
+            $(function() {
+                $(".carousel").carousel( {interval: 4000 });
+                $("#carouselPause").click(function(){
+                    $(".carousel").carousel("pause");
+                });
+                $("#carouselPlay").click(function(){
+                    $(".carousel").carousel("cycle");
+                });
             });
-            $("#carouselPlay").click(function(){
-                $(".carousel").carousel("cycle");
-            });
-        });
-    </script>
+        </script>
 
     </body>
 

@@ -2,9 +2,6 @@
 HTML Style Rules
 **************************/
 
-html {
-   
-}
 
 /* Select all elements */
 * {
@@ -21,15 +18,25 @@ body {
     background-color: #0A1956;
 }
 
+/**************************
+Discount Style Rules
+**************************/
 
+#promotion{
+    height: 40px;
+}
 
+#discount {
+    color: red;
+    
+}
 
 
 
 /**************************
 Header Style Rules
 **************************/
-h1, h5 {
+h1, h2, h3, h4,h5, p, li {
     font-family: 'Righteous', cursive;
 }
 
@@ -54,12 +61,10 @@ nav {
 
 #navbar-list li {
     padding-left: 2rem;
-    border: 2px solid black;
+    border: 2px solid rgb(255, 192, 6);
     text-align: center;
     width: 200px;
     
-    
-
 }
 
 /**************************
@@ -73,6 +78,7 @@ Carousel Style Rules
     z-index: 100;
 }
 
+
 /**************************
 Main Style Rules
 **************************/
@@ -80,9 +86,24 @@ Main Style Rules
 .game-container {
     position: relative;
     text-align: center;
-    font-size: 3rem;
     color: black;
   }
+
+#hover-el {
+    font-family: 'Righteous', cursive;
+    font-size: 3rem;
+    padding: 10px;
+    display: none;
+    color: white;
+    background-color: #212529;
+    border: 2px rgba(255, 192, 6);
+    border-style: dotted solid double;
+    border-radius: 60px;
+}
+
+.game-container:hover #hover-el {
+    display: block;
+}
 
   .centered {
     position: absolute;
@@ -97,22 +118,67 @@ Accordian Style Rules
 
 #accordian-title h3 {
     color: white;
-    font-size: 3rem;
+    font-size: 2.5rem;
     text-align: center;
     background-color: black;
+    height: 75px;
 }
 
 
+/**************************
+Icon Style Rules
+**************************/
+
+#social-title {
+    color: white;
+    background-color: black;
+    height: 60px;
+    text-align: center;
+    font-size: 2.5rem;
+
+}
+
+#instagram {
+    color: rgb(193,53,132);
+    padding-right: 50px;
+}
+
+#facebook {
+    color: rgb(66,103,178);
+    padding-right: 50px;
+}
+
+#twitter {
+    color: rgb(29,161,242);
+    padding-right: 50px;
+}
+
+#youtube {
+    color: rgb(255, 0 ,0);
+    padding-right: 50px;
+}
 
 /**************************
 Footer Style Rules
 **************************/
 
 
-
-#social-title {
-    color: white;
-    background-color: black;
+footer h5 {
+    border-bottom: 1px solid black;
 }
 
 
+/**************************
+Media Queries 
+**************************/
+
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    .game-container {
+        width: 30%;
+        margin: 0 auto;
+        display: inline-block;
+        margin-left: 25px;
+    }
+}
