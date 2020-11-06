@@ -1,0 +1,165 @@
+/**************************
+Color Variables
+**************************/
+/**************************
+HTML Style Rules
+**************************/
+/* Universal Selector */
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+/**************************
+Body Style Rules
+**************************/
+body {
+  background-color: #0A1956;
+}
+
+/**************************
+Discount Style Rules
+**************************/
+#promotion {
+  height: 40px;
+}
+
+/**************************
+Header Style Rules
+**************************/
+h1, h2, h3, h4, h5, p, li {
+  font-family: "Righteous", cursive;
+}
+
+.jumbotron {
+  margin-bottom: 0;
+}
+
+/**************************
+Nav Style Rules
+**************************/
+nav {
+  background-color: #343a40;
+}
+
+nav .nav-item a {
+  color: white;
+}
+
+nav a:hover {
+  color: red;
+}
+
+nav #navbar-list li {
+  margin-right: 5px;
+  border: 2px solid #ffc107;
+}
+
+/**************************
+Carousel Style Rules
+**************************/
+#carouselButton {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: 100;
+}
+
+/**************************
+Main Style Rules
+**************************/
+.game-container {
+  position: relative;
+  text-align: center;
+  color: black;
+}
+
+#hover-el {
+  font-family: 'Righteous', cursive;
+  font-size: 3rem;
+  padding: 10px;
+  display: none;
+  color: white;
+  background-color: #343a40;
+  border: 2px #ffc107;
+  border-style: dotted solid double;
+  border-radius: 60px;
+}
+
+.game-container:hover #hover-el {
+  display: block;
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/**************************
+Accordian Style Rules
+**************************/
+#accordian-title h3 {
+  color: white;
+  font-size: 2.5rem;
+  text-align: center;
+  background-color: black;
+  height: 75px;
+}
+
+/**************************
+Icon Style Rules
+**************************/
+#social-title {
+  color: white;
+  background-color: black;
+  height: 60px;
+  text-align: center;
+  font-size: 2.5rem;
+}
+
+#instagram {
+  color: #c13584;
+  padding-right: 50px;
+}
+
+#facebook {
+  color: #4267b2;
+  padding-right: 50px;
+}
+
+#twitter {
+  color: #1da1f2;
+  padding-right: 50px;
+}
+
+#youtube {
+  color: red;
+  padding-right: 50px;
+}
+
+/**************************
+Footer Style Rules
+**************************/
+footer h5 {
+  border-bottom: 1px solid black;
+}
+
+footer li {
+  display: inline !important;
+}
+
+/**************************
+Media Queries 
+**************************/
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .game-container {
+    width: 30%;
+    margin: 0 auto;
+    display: inline-block;
+    margin-left: 25px;
+  }
+}
